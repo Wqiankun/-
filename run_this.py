@@ -84,7 +84,7 @@ if __name__ == "__main__":
             # 如果掉下地狱或者升上天堂, 这回合就结束了
             if done:
                 break
-        q_learning.append(reward)
+        q_learning.append(7000-reward)
         print(reward)
 
     x = [5, 10, 15, 20, 25, 30, 35, 40, 45]
@@ -96,7 +96,7 @@ if __name__ == "__main__":
     plt.xticks(fontsize=14)
     plt.yticks(fontsize=14)
     plt.xlabel("Background task flow of edge server", fontsize=14)
-    plt.ylim(0, 3500)
+    plt.ylim(0, 5000)
     plt.ylabel("completion  time", fontsize=14)
     plt.legend(loc=0, ncol=2)
     # 图例大小
